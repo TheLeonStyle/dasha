@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Даша, ты чаруешь мир!</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: radial-gradient(circle, #2c003e, #590d82);
+            text-align: center;
+            font-family: 'Cursive', sans-serif;
+            color: #ffdde1;
+            overflow: hidden;
+        }
+        .container {
+            animation: fadeIn 2s ease-in-out;
+        }
+        h1 {
+            font-size: 4rem;
+            text-shadow: 3px 3px 6px rgba(255, 217, 242, 0.3);
+            font-family: 'Lucida Calligraphy', cursive;
+        }
+        .compliment {
+            font-size: 1.8rem;
+            margin-top: 20px;
+            opacity: 0;
+            font-style: italic;
+            animation: fadeInUp 1.5s ease-in-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Даша</h1>
+        <p class="compliment">Ты, как лунный свет, таинственна и прекрасна.</p>
+        <p class="compliment" style="animation-delay: 1s;">В твоих глазах отражается бесконечность ночного неба.</p>
+        <p class="compliment" style="animation-delay: 2s;">Ты - поэзия, написанная самой тьмой и озарённая звёздами.</p>
+        <p class="compliment" style="animation-delay: 3s;">Твой голос — шёпот веков, несущий магию и тайны.</p>
+    </div>
+</body>
+</html>
